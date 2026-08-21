@@ -1,4 +1,4 @@
-cask "mnemosyne" do
+cask "mnemosyne-pdf" do
   version "1.5.1"
   sha256 "75891d92c12079448bb706a7b58b753cd06e4d14bba04ae010445a979a5a0720"
 

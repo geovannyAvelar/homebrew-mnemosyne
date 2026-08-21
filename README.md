@@ -7,11 +7,11 @@ native desktop reader for PDF, EPUB, and HTML files.
 
 ```bash
 brew tap geovannyAvelar/mnemosyne
-brew install --cask mnemosyne
+brew install --cask mnemosyne-pdf
 ```
 
 ## Update
 
 ```bash
-brew upgrade --cask mnemosyne
+brew upgrade --cask mnemosyne-pdf
 ```
