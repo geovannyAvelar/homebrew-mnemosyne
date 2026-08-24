@@ -15,3 +15,14 @@ brew install --cask mnemosyne-pdf
 ```bash
 brew upgrade --cask mnemosyne-pdf
 ```
+
+## Install a specific version
+
+Every past release also has a pinned cask, e.g.:
+
+```bash
+brew install --cask mnemosyne-pdf@1.5.1
+```
+
+Pinned casks conflict with `mnemosyne-pdf` (the latest, auto-updating cask),
+so only one can be installed at a time.
