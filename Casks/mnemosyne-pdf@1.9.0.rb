@@ -1,13 +1,13 @@
-cask "mnemosyne-pdf" do
-  version "1.10.0"
+cask "mnemosyne-pdf@1.9.0" do
+  version "1.9.0"
 
   on_arm do
-    sha256 "c096a6c8750a106ddc9c4b9a9eebb9cb5be7fd3a10d52ee5a3f52874ff18eb6d"
+    sha256 "535012abf25f63e033bac9c71ca01cda73b0b85989c9d3a63b14ebfce17dac24"
 
     url "https://github.com/geovannyAvelar/mnemosyne/releases/download/v#{version}/Mnemosyne-macos-arm64.dmg"
   end
   on_intel do
-    sha256 "1238911c6bfbca1947b4289167e33be3d27fbcc427fa6134b3718ecc0dd95f57"
+    sha256 "abe237a92eb619be7189c270f246231078ddd6fc98343c3127c5036c3d6b4f49"
 
     url "https://github.com/geovannyAvelar/mnemosyne/releases/download/v#{version}/Mnemosyne-macos-x86_64.dmg"
   end
@@ -16,11 +16,7 @@ cask "mnemosyne-pdf" do
   desc "Native desktop reader for PDF, EPUB, and HTML files"
   homepage "https://github.com/geovannyAvelar/mnemosyne"
 
-  livecheck do
-    url "https://github.com/geovannyAvelar/mnemosyne/releases/latest"
-    strategy :github_latest
-  end
-
+  conflicts_with cask: "mnemosyne-pdf"
   depends_on :macos
 
   app "Mnemosyne.app"
